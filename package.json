@@ -5,7 +5,7 @@
   "repository": "https://github.com/small-cosmos/vboy",
   "author": "hiepxanh <hiepxanh@gmail.com>",
   "description": "Support Vite 3, run test one by one",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "icon": "resources/logo.png",
   "license": "MIT",
