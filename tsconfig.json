@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "target": "es2022",
+        "declaration": true,
+        "outDir": "dist",
+        "emitDeclarationOnly": true,
+        "jsx": "preserve"
+    },
+    "include": [
+        "src"
+    ]
+}

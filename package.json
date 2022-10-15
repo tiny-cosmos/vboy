@@ -1,0 +1,45 @@
+{
+  "name": "vscode-vboy",
+  "displayName": "Vitest Runner",
+  "version": "0.0.4",
+  "main": "dist/index.js",
+  "icon": "logo.png",
+  "license": "MIT",
+  "description": "Vitest case runner.",
+  "publisher": "kingwl",
+  "engines": {
+    "vscode": "^1.65.0"
+  },
+  "categories": [
+    "Testing",
+    "Other"
+  ],
+  "keywords": [
+    "vitest",
+    "runner",
+    "codelens"
+  ],
+  "repository": "git@github.com:small-cosmos/vscode-vboy.git",
+  "author": "kingwl <kingwenlu@gmail.com>",
+  "activationEvents": [
+    "onLanguage:typescript",
+    "onLanguage:javascript",
+    "onLanguage:typescriptreact",
+    "onLanguage:javascriptreact"
+  ],
+  "devDependencies": {
+    "@types/node": "^18.8.5",
+    "@types/vscode": "^1.72.0",
+    "esbuild": "^0.15.10",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4",
+    "vitest": "^0.24.1",
+    "vsce": "^2.11.0"
+  },
+  "scripts": {
+    "build": "node ./scripts/build.js",
+    "package": "pnpm build && pnpm vsce package",
+    "format:check": "prettier --config ./prettier.config.json --c ./src/**/*.ts",
+    "format:write": "pnpm format:check --write"
+  }
+}

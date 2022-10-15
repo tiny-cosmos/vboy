@@ -1,0 +1,11 @@
+.vscode
+.gitignore
+src
+prettier.config.json
+tsconfig.json
+scripts
+tests
+vitest.config.ts
+dist/*.d.ts
+dist/*.js.map
+docs/preview.png
