@@ -2,6 +2,7 @@ import * as vscode from 'vscode';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
 import { capitalizeFirstLetter, replaceDoubleSlashes } from './utils';
+import { getConfig } from './config';
 
 function windowPath(casePath: string) {
     const isWindow = process.platform === 'win32';
@@ -14,9 +15,11 @@ function windowPath(casePath: string) {
 
 function buildVitestArgs( path:string, name: string) {
     const wsPath = fileURLToPath(vscode.workspace.workspaceFolders?.[0]?.uri?.toString() || '');
-    const { filePath: workspacePath } = windowPath(wsPath);
+    const { filePath: workspacePath, dirname } = windowPath(wsPath);
     // console.log('your path', path, name, wsPath, workspacePath);
-    return ['vitest', 'run', '-r', workspacePath ,  path, '-t', name];
+    // console.log("getConfiguration('myExt.setting').get('doIt')",getConfig().configPath)
+    const configPath = workspacePath + (getConfig().configPath.startsWith('.') ? getConfig().configPath.slice(1) : getConfig().configPath);
+    return ['vitest', 'run', '-c', configPath, '-r', workspacePath , '-t', name, path];
 }
 
 export function runInTerminal(name: string, casePath: string) {

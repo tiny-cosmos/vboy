@@ -1,31 +1,30 @@
 {
   "name": "vscode-vboy",
-  "displayName": "Vitest Runner",
-  "version": "0.0.4",
+  "displayName": "Vboy - Your vite boy test runner",
+  "publisher": "hiepxanh",
+  "repository": "https://github.com/small-cosmos/vscode-vboy",
+  "author": "hiepxanh <hiepxanh@gmail.com>",
+  "description": "Support Vite 3, run test one by one",
+  "version": "0.0.1",
   "main": "dist/index.js",
-  "icon": "logo.png",
   "license": "MIT",
-  "description": "Vitest case runner.",
-  "publisher": "kingwl",
   "engines": {
-    "vscode": "^1.65.0"
+    "vscode": "^1.72.0"
   },
   "categories": [
-    "Testing",
-    "Other"
+    "Testing"
   ],
   "keywords": [
     "vitest",
     "runner",
-    "codelens"
+    "vite"
   ],
-  "repository": "git@github.com:small-cosmos/vscode-vboy.git",
-  "author": "kingwl <kingwenlu@gmail.com>",
   "activationEvents": [
     "onLanguage:typescript",
     "onLanguage:javascript",
     "onLanguage:typescriptreact",
-    "onLanguage:javascriptreact"
+    "onLanguage:javascriptreact",
+    "onLanguage:typescriptangular"
   ],
   "devDependencies": {
     "@types/node": "^18.8.5",
@@ -41,5 +40,18 @@
     "package": "pnpm build && pnpm vsce package",
     "format:check": "prettier --config ./prettier.config.json --c ./src/**/*.ts",
     "format:write": "pnpm format:check --write"
+  },
+  "contributes": {
+    "configuration": {
+      "title": "Vboy",  
+      "properties": {
+        "vboy.configPath": {
+          "markdownDescription": "Your vitest config, default is root",
+          "type": "string",
+          "scope": "resource",
+          "default": "./vitest.config.ts"
+        }
+      }
+    }
   }
 }
