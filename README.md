@@ -8,8 +8,14 @@ Run your test case by vitest. (Tested with Vite 3)
 - just open .test.ts file and enjoy
 - if you setting your vitest.config.ts in sub-folder, you need to:
   - Crl + P to open setting
-  - type: "vboy" 
-  - change default folder, ex: "./configs/vitest/config.ts" then close the windows
+  - type: "workspace setting" 
+  - modify json file add your config path with `vboy.configPath` 
+
+```
+{
+    "vboy.configPath": "./configs/vitest/vitest.config.ts"
+}
+```
 
 
 
