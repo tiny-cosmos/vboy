@@ -41,10 +41,10 @@
     "package": "pnpm build && pnpm vsce package",
     "format:check": "prettier --config ./prettier.config.json --c ./src/**/*.ts",
     "format:write": "pnpm format:check --write",
-    "publish": "vsce publish",
-    "patch": "vsce publish patch",
-    "minor": "vsce publish minor",
-    "major": "vsce publish major"
+    "publish": "pnpm package && vsce publish",
+    "patch": "pnpm package && vsce publish patch",
+    "minor": "pnpm package && vsce publish minor",
+    "major": "pnpm package && vsce publish major"
 
   },
   "contributes": {
