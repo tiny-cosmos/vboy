@@ -1,12 +1,13 @@
 {
   "name": "vscode-vboy",
-  "displayName": "Vboy - Your vite boy test runner",
+  "displayName": "Vboy - Your vite test runner (power by vitest)",
   "publisher": "hiepxanh",
   "repository": "https://github.com/small-cosmos/vscode-vboy",
   "author": "hiepxanh <hiepxanh@gmail.com>",
   "description": "Support Vite 3, run test one by one",
   "version": "0.0.1",
   "main": "dist/index.js",
+  "logo": "resources/logo.png",
   "license": "MIT",
   "engines": {
     "vscode": "^1.72.0"

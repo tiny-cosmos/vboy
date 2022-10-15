@@ -1,6 +1,6 @@
 # Vboy
 
-![preview](/resources/logo.png)
+![preview](https://github.com/small-cosmos/vboy/blob/master/resources/logo.png)
 
 Run your test case by vitest. (Tested with Vite 3)
 
@@ -8,14 +8,14 @@ Run your test case by vitest. (Tested with Vite 3)
 
 ## Add Run (Vitest) and Debug (Vitest)
 
-![preview1](/resources/Screenshot_1.png)
+![preview1](https://github.com/small-cosmos/vboy/blob/master/resources/Screenshot_1.png)
 
 
 
 
 ## run command in active Termninal
 
-![preview2](/resources/Screenshot_2.png)
+![preview2](https://github.com/small-cosmos/vboy/blob/master/resources/Screenshot_2.png)
 
 ## TODO
 
