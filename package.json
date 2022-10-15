@@ -2,7 +2,7 @@
   "name": "vscode-vboy",
   "displayName": "Vboy - Your vite test runner (power by vitest)",
   "publisher": "hiepxanh",
-  "repository": "https://github.com/small-cosmos/vscode-vboy",
+  "repository": "https://github.com/small-cosmos/vboy",
   "author": "hiepxanh <hiepxanh@gmail.com>",
   "description": "Support Vite 3, run test one by one",
   "version": "0.0.2",
